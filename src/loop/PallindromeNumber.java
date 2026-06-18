@@ -4,19 +4,21 @@ public class PallindromeNumber {
 
 	public static void main(String[] args) 
 	{
-		int a=1234321,y=0,res;
+		int a=123454321,y=0;
+		int b=a;
 		
-		for(int i=1;i<=7;i++)
+		//for(int i=1;i<=9;i++)
+		while(a>0)
 		{
 			int x=a%10;
-			y=(y*10)+(a/10);
+			y=(y*10)+x;
 			a=a/10;
-			res=y;
 			
 		}
 		System.out.println(y);
 		
-		if(res==a)
+		
+		if(y==b)
 		{
 			System.out.println("The number is Pallindrome");
 		}
