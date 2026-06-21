@@ -20,7 +20,7 @@ public class TakingInputFromKeyboard {
 		String city = sc.next();
 		
 		System.out.println("You stay in:"+city);
-		
+		sc.close();
 	}
 
 }

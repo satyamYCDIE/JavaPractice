@@ -6,7 +6,7 @@ public class SortingUsingForLoop {
 
 	public static void main(String[] args) 
 	{
-		int a[]= {50,20,40,10,100};
+		int a[]= {50,20,40,10,100,90,70,60,80,30};
 		
 		for(int i=0;i<a.length-1;i++)
 		{
