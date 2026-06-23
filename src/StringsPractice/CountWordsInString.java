@@ -9,9 +9,9 @@ public class CountWordsInString {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the string:");
 		String str=sc.nextLine();
-		int Wcount=0;
+		//int Wcount=0;
 		
-		char a[]=str.toCharArray();
+		/*char a[]=str.toCharArray();
 		for(int i=0;i<a.length;i++)
 		{
 			if(i == 0 && a[i] != ' ')
@@ -24,6 +24,11 @@ public class CountWordsInString {
 		    }
 		}
 		System.out.println("The count of the words is:"+Wcount);
+		sc.close();
+		*/
+		String[] words = str.trim().split("\\s+");
+		System.out.println("The count of the words is: " + words.length);
+		
 		sc.close();
 	}
 
