@@ -15,7 +15,7 @@ public class Employee {
 		System.out.println(sal);
 	}
 	
-	public static void main(String[] args) 
+	/*public static void main(String[] args) 
 	{
 		Employee emp1=new Employee();
 		emp1.eid=101;
@@ -30,6 +30,6 @@ public class Employee {
 		emp2.job="Manager";
 		emp2.sal=100000;
 		emp2.display();
-	}
+	}*/
 
 }
