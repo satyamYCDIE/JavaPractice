@@ -18,7 +18,12 @@ public class StudentEx
 		grade=gr;
 	}
 	
-	
+	StudentEx (int id,String name,char gr)
+	{
+		sid=id;
+		sname=name;
+		grade=gr;
+	}
 	
 	
 	
