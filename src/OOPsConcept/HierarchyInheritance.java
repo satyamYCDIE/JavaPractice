@@ -1,6 +1,6 @@
 package OOPsConcept;
 
-class A
+class Parent
 {
 	int a;
 	void display()
@@ -8,7 +8,7 @@ class A
 		System.out.println("The value of A is:"+a);
 	}
 }
-class B extends A
+class child1 extends Parent
 {
 	int b;
 	void show()
@@ -16,7 +16,7 @@ class B extends A
 		System.out.println("The value of B is:"+b);
 	}
 }
-class C extends B
+class child2 extends Parent
 {
 	int c;
 	void print()
@@ -24,24 +24,23 @@ class C extends B
 		System.out.println("The value of C is:"+c);
 	}
 }
-public class InheritanceTypes {
+
+public class HierarchyInheritance {
 
 	public static void main(String[] args) 
 	{
-		/*B bobj=new B();
-		System.out.println(bobj.a);  
-		System.out.println(bobj.b);
+		child1 ch1=new child1();
+		ch1.a=123;
+		ch1.b=456;
+		ch1.display();
+		ch1.show();
 		
-		bobj.display();
-		bobj.show();*/
-		C cobj=new C();
-		cobj.a=69;
-		cobj.b=169;
-		cobj.c=269;
-		cobj.display();
-		cobj.show();
-		cobj.print();
-		
+		child2 ch2 =new child2();
+		ch2.c=789;
+		ch2.a=321;
+		ch2.display();
+		ch2.print();
+
 	}
 
 }
