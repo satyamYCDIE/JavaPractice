@@ -14,11 +14,11 @@ class ABC
 
 class XYZ extends ABC
 {
-	void m1(int a) //method overloading
+	void m1(int a) //method overriding
 	{
 		System.out.println("The value of XYZ method M1 is:"+(a*a));
 	}
-	void m2(int a,int b)  //method overriding
+	void m2(int a,int b)  //method overloading
 	{
 		System.out.println("The value of XYZ method M2 is:"+a+b);
 	}
