@@ -17,6 +17,27 @@ public class DataConversionMethods {
 		//String to boolean
 		String e="false";
 		System.out.println(Boolean.parseBoolean(e));
+		
+		//String to char not possible
+		
+		//integer,double,boolean,char to String
+		
+		int f=123;
+		double g=23.45;
+		boolean bool=false;
+		char ch='A';
+		
+		String s1=String.valueOf(f);
+		System.out.println(s1);
+		
+		String s2=String.valueOf(g);
+		System.out.println(s2);
+		
+		String s3=String.valueOf(bool);
+		System.out.println(s3);
+		
+		String s4=String.valueOf(ch);
+		System.out.println(s4);
 	}
 
 }
