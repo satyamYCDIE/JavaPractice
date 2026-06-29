@@ -23,20 +23,27 @@ public class InterfaceDemo implements shape
 	{
 		System.out.println("This is abstract method");
 	}
+	public void triangle()  
+	{
+		System.out.println("This is triangle method:");
+	}
 	
 	public static void main(String[] args)
 	{
 		//Scenario - 1
-		/*InterfaceDemo idobj= new InterfaceDemo();
+		InterfaceDemo idobj= new InterfaceDemo();
 		idobj.circle();	   //abstract method
 		idobj.square();    //default method
 		shape.rectangle(); //static method can directly access from interface
-		*/
+		idobj.triangle();
+		
 		//Scenario - 2 
 		shape sh=new InterfaceDemo();
 		sh.circle();		//abstract method
 		sh.square();		//default method
 		shape.rectangle();  //static method can directly access from interface
+		//sh.triangle(); // not able to access
+		System.out.println(shape.length*shape.width);  //accessing static variable directly
 	}
 
 }
