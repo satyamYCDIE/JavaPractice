@@ -23,6 +23,7 @@ public class ExceptionDemo {
 		System.out.println("Program successfully executed:");
 		System.out.println("Program successfully exited:");
 
+		sc.close();
 	}
 
 }
