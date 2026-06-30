@@ -24,7 +24,7 @@ public class DataConversionMethods {
 		
 		int f=123;
 		double g=23.45;
-		boolean bool=false;
+		boolean bool=true;
 		char ch='A';
 		
 		String s1=String.valueOf(f);
